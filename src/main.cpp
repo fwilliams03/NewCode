@@ -67,7 +67,7 @@ void pre_auton(void) {
 
 void autonomous(void) {
   //skills
-  
+
 Conveyor.spin(forward, 100, velocityUnits::pct); //grab goal  
  vex::task::sleep(270);
  Conveyor.stop(hold);
@@ -149,10 +149,10 @@ Conveyor.spin(forward, 100, velocityUnits::pct); //grab goal
  vex::task::sleep(220);   //drop off blue goal
  Conveyor.stop();
  vex::task::sleep(500);
- FrontRightBase.startRotateFor(directionType::rev, .41, rotationUnits::rev, 35,  velocityUnits::pct);
- FrontLeftBase.startRotateFor(directionType::fwd, .41, rotationUnits::rev, 35,velocityUnits::pct);    //turn left towards red goal
- BackRightBase.startRotateFor(directionType::rev, .41, rotationUnits::rev, 35, velocityUnits::pct);
- BackLeftBase.rotateFor(directionType::fwd, .41, rotationUnits::rev, 35,velocityUnits::pct);
+ FrontRightBase.startRotateFor(directionType::rev, .4, rotationUnits::rev, 35,  velocityUnits::pct);
+ FrontLeftBase.startRotateFor(directionType::fwd, .4, rotationUnits::rev, 35,velocityUnits::pct);    //turn left towards red goal
+ BackRightBase.startRotateFor(directionType::rev, .4, rotationUnits::rev, 35, velocityUnits::pct);
+ BackLeftBase.rotateFor(directionType::fwd, .4, rotationUnits::rev, 35,velocityUnits::pct);
  vex::task::sleep(500);
  FrontRightBase.startRotateFor(directionType::fwd, 2.7, rotationUnits::rev, 40,  velocityUnits::pct);
  FrontLeftBase.startRotateFor(directionType::fwd, 2.7, rotationUnits::rev, 40,velocityUnits::pct);  //drive forward for red goal 
