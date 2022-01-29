@@ -193,10 +193,10 @@ Conveyor.spin(forward, 100, velocityUnits::pct); //grab goal
  LeftLift.startRotateFor(directionType::fwd, 2.5, rotationUnits::rev);
  RightLift.startRotateFor(directionType::fwd, 2.5, rotationUnits::rev); //lift up again
  vex::task::sleep(500);
- FrontRightBase.startRotateFor(directionType::fwd, 2, rotationUnits::rev, 40,  velocityUnits::pct);
- FrontLeftBase.startRotateFor(directionType::fwd, 2, rotationUnits::rev, 40,velocityUnits::pct);
- BackRightBase.startRotateFor(directionType::fwd, 2, rotationUnits::rev, 40, velocityUnits::pct); //drive forward towards red platform
- BackLeftBase.rotateFor(directionType::fwd, 2, rotationUnits::rev, 40,velocityUnits::pct);
+ FrontRightBase.startRotateFor(directionType::fwd, 2.1, rotationUnits::rev, 40,  velocityUnits::pct);
+ FrontLeftBase.startRotateFor(directionType::fwd, 2.1, rotationUnits::rev, 40,velocityUnits::pct);
+ BackRightBase.startRotateFor(directionType::fwd, 2.1, rotationUnits::rev, 40, velocityUnits::pct); //drive forward towards red platform
+ BackLeftBase.rotateFor(directionType::fwd, 2.1, rotationUnits::rev, 40,velocityUnits::pct);
  vex::task::sleep(500);
  LeftLift.startRotateFor(directionType::rev, 1.3, rotationUnits::rev);
  RightLift.startRotateFor(directionType::rev, 1.3, rotationUnits::rev); //lift down
@@ -213,11 +213,15 @@ Conveyor.spin(forward, 100, velocityUnits::pct); //grab goal
  LeftLift.startRotateFor(directionType::rev, 1, rotationUnits::rev);
  RightLift.startRotateFor(directionType::rev, 1, rotationUnits::rev);
  vex::task::sleep(500);
- FrontRightBase.startRotateFor(directionType::rev, 4, rotationUnits::rev, 45,  velocityUnits::pct);
- FrontLeftBase.startRotateFor(directionType::rev, 4, rotationUnits::rev, 45,velocityUnits::pct);
- BackRightBase.startRotateFor(directionType::rev, 4, rotationUnits::rev, 45, velocityUnits::pct);
- BackLeftBase.rotateFor(directionType::rev, 4, rotationUnits::rev, 45,velocityUnits::pct);
+ FrontRightBase.startRotateFor(directionType::rev, 4.2, rotationUnits::rev, 45,  velocityUnits::pct);
+ FrontLeftBase.startRotateFor(directionType::rev, 4.2, rotationUnits::rev, 45,velocityUnits::pct);
+ BackRightBase.startRotateFor(directionType::rev, 4.2, rotationUnits::rev, 45, velocityUnits::pct);
+ BackLeftBase.rotateFor(directionType::rev, 4.2, rotationUnits::rev, 45,velocityUnits::pct);
  vex::task::sleep(500);
+ FrontRightBase.startRotateFor(directionType::rev, .5, rotationUnits::rev, 35,  velocityUnits::pct);
+ FrontLeftBase.startRotateFor(directionType::fwd, .5, rotationUnits::rev, 35,velocityUnits::pct);    //turn right
+ BackRightBase.startRotateFor(directionType::rev, .5, rotationUnits::rev, 35, velocityUnits::pct);
+ BackLeftBase.rotateFor(directionType::fwd, .5, rotationUnits::rev, 35,velocityUnits::pct);
 
  //left side 
 /*
