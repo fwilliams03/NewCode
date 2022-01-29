@@ -254,6 +254,11 @@ vex::task::sleep(800);
 Claw.spin(directionType::rev,100, velocityUnits::pct);
 vex::task::sleep(200); //drop red goal
 Claw.stop(hold);
+vex::task::sleep(500);
+ FrontRightBase.startRotateFor(directionType::rev, 1, rotationUnits::rev, 35,  velocityUnits::pct);
+ FrontLeftBase.startRotateFor(directionType::rev, 1, rotationUnits::rev, 35,velocityUnits::pct);    //turn right
+ BackRightBase.startRotateFor(directionType::rev, 1, rotationUnits::rev, 35, velocityUnits::pct);
+ BackLeftBase.rotateFor(directionType::rev, 1, rotationUnits::rev, 35,velocityUnits::pct);
 
  //left side 
 /*
