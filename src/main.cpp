@@ -208,20 +208,7 @@ Conveyor.spin(forward, 100, velocityUnits::pct); //grab goal
  FrontRightBase.startRotateFor(directionType::rev, 1, rotationUnits::rev, 40,  velocityUnits::pct);
  FrontLeftBase.startRotateFor(directionType::rev, 1, rotationUnits::rev, 40,velocityUnits::pct);   //drive away from platform
  BackRightBase.startRotateFor(directionType::rev, 1, rotationUnits::rev, 40, velocityUnits::pct);
- BackLeftBase.rotateFor(directionType::rev, .5, rotationUnits::rev, 40,velocityUnits::pct);
- vex::task::sleep(500);
- FrontRightBase.startRotateFor(directionType::fwd, 1, rotationUnits::rev, 35,  velocityUnits::pct);
- FrontLeftBase.startRotateFor(directionType::rev, 1, rotationUnits::rev, 35,velocityUnits::pct); //turn 
- BackRightBase.startRotateFor(directionType::fwd, 1, rotationUnits::rev, 35, velocityUnits::pct);
- BackLeftBase.rotateFor(directionType::rev, 1, rotationUnits::rev, 35,velocityUnits::pct);
- vex::task::sleep(500);
- LeftLift.startRotateFor(directionType::rev, 1, rotationUnits::rev);
- RightLift.startRotateFor(directionType::rev, 1, rotationUnits::rev);
- vex::task::sleep(500);
- FrontRightBase.startRotateFor(directionType::fwd, 4, rotationUnits::rev, 45,  velocityUnits::pct);
- FrontLeftBase.startRotateFor(directionType::fwd, 4, rotationUnits::rev, 45,velocityUnits::pct);
- BackRightBase.startRotateFor(directionType::fwd, 4, rotationUnits::rev, 45, velocityUnits::pct);
- BackLeftBase.rotateFor(directionType::fwd, 4, rotationUnits::rev, 45,velocityUnits::pct);
+ BackLeftBase.rotateFor(directionType::rev, 1, rotationUnits::rev, 40,velocityUnits::pct);
  vex::task::sleep(500);
  LeftLift.startRotateFor(directionType::rev, 1, rotationUnits::rev);
  RightLift.startRotateFor(directionType::rev, 1, rotationUnits::rev);
@@ -231,7 +218,7 @@ Conveyor.spin(forward, 100, velocityUnits::pct); //grab goal
  BackRightBase.startRotateFor(directionType::rev, 3, rotationUnits::rev, 45, velocityUnits::pct);
  BackLeftBase.rotateFor(directionType::rev, 3, rotationUnits::rev, 45,velocityUnits::pct);
  vex::task::sleep(500);
- 
+
  //left side 
 /*
  Conveyor.spin(forward, 20, velocityUnits::pct);
