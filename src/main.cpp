@@ -122,7 +122,7 @@ Conveyor.spin(forward, 100, velocityUnits::pct); //grab goal
  vex::task::sleep(500);
  LeftLift.startRotateFor(directionType::rev, 1, rotationUnits::rev, 75, velocityUnits::pct);    //lift down to drop goal
  RightLift.startRotateFor(directionType::rev, 1, rotationUnits::rev, 75, velocityUnits::pct);
- vex::task::sleep(500);
+ vex::task::sleep(800);
  Claw.spin(directionType::rev,100, velocityUnits::pct);
  vex::task::sleep(200);       //release goal
  Claw.stop(hold);
@@ -149,10 +149,10 @@ Conveyor.spin(forward, 100, velocityUnits::pct); //grab goal
  vex::task::sleep(220);   //drop off blue goal
  Conveyor.stop();
  vex::task::sleep(500);
- FrontRightBase.startRotateFor(directionType::rev, .366, rotationUnits::rev, 35,  velocityUnits::pct);
- FrontLeftBase.startRotateFor(directionType::fwd, .366, rotationUnits::rev, 35,velocityUnits::pct);    //turn left towards red goal
- BackRightBase.startRotateFor(directionType::rev, .366, rotationUnits::rev, 35, velocityUnits::pct);
- BackLeftBase.rotateFor(directionType::fwd, .366, rotationUnits::rev, 35,velocityUnits::pct);
+ FrontRightBase.startRotateFor(directionType::rev, .364, rotationUnits::rev, 35,  velocityUnits::pct);
+ FrontLeftBase.startRotateFor(directionType::fwd, .364, rotationUnits::rev, 35,velocityUnits::pct);    //turn left towards red goal
+ BackRightBase.startRotateFor(directionType::rev, .364, rotationUnits::rev, 35, velocityUnits::pct);
+ BackLeftBase.rotateFor(directionType::fwd, .364, rotationUnits::rev, 35,velocityUnits::pct);
  vex::task::sleep(500);
  FrontRightBase.startRotateFor(directionType::fwd, 2.6, rotationUnits::rev, 40,  velocityUnits::pct);
  FrontLeftBase.startRotateFor(directionType::fwd, 2.6, rotationUnits::rev, 40,velocityUnits::pct);  //drive forward for red goal 
