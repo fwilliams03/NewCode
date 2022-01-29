@@ -81,6 +81,7 @@ Conveyor.spin(forward, 100, velocityUnits::pct); //grab goal
  FrontLeftBase.startRotateFor(directionType::fwd, 1, rotationUnits::rev, 35,velocityUnits::pct);    //turn right
  BackRightBase.startRotateFor(directionType::rev, 1, rotationUnits::rev, 35, velocityUnits::pct);
  BackLeftBase.rotateFor(directionType::fwd, 1, rotationUnits::rev, 35,velocityUnits::pct);
+ FrontLeftBase.startRotateFor(directionType::fwd, .95, rotationUnits::rev, 35,velocityUnits::pct);    //turn right
  vex::task::sleep(500);
  Claw.spin(directionType::rev,100, velocityUnits::pct);
  vex::task::sleep(300);         //open claw
