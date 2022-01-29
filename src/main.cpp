@@ -154,10 +154,10 @@ Conveyor.spin(forward, 100, velocityUnits::pct); //grab goal
  BackRightBase.startRotateFor(directionType::rev, .366, rotationUnits::rev, 35, velocityUnits::pct);
  BackLeftBase.rotateFor(directionType::fwd, .366, rotationUnits::rev, 35,velocityUnits::pct);
  vex::task::sleep(500);
- FrontRightBase.startRotateFor(directionType::fwd, 2.7, rotationUnits::rev, 40,  velocityUnits::pct);
- FrontLeftBase.startRotateFor(directionType::fwd, 2.7, rotationUnits::rev, 40,velocityUnits::pct);  //drive forward for red goal 
- BackRightBase.startRotateFor(directionType::fwd, 2.7, rotationUnits::rev, 40, velocityUnits::pct);
- BackLeftBase.rotateFor(directionType::fwd, 2.7, rotationUnits::rev, 40,velocityUnits::pct);
+ FrontRightBase.startRotateFor(directionType::fwd, 2.6, rotationUnits::rev, 40,  velocityUnits::pct);
+ FrontLeftBase.startRotateFor(directionType::fwd, 2.6, rotationUnits::rev, 40,velocityUnits::pct);  //drive forward for red goal 
+ BackRightBase.startRotateFor(directionType::fwd, 2.6, rotationUnits::rev, 40, velocityUnits::pct);
+ BackLeftBase.rotateFor(directionType::fwd, 2.6, rotationUnits::rev, 40,velocityUnits::pct);
  vex::task::sleep(500);
  Claw.spin(directionType::fwd,100, velocityUnits::pct);
  vex::task::sleep(400);
