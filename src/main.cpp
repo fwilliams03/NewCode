@@ -310,10 +310,10 @@ FrontRightBase.startRotateFor(directionType::rev, .55, rotationUnits::rev, 35,  
  vex::task::sleep(200);
  Claw.stop();
  vex::task::sleep(600);
- FrontRightBase.startRotateFor(directionType::fwd, 2.47, rotationUnits::rev, 70,  velocityUnits::pct);
- FrontLeftBase.startRotateFor(directionType::fwd, 2.47, rotationUnits::rev, 70,velocityUnits::pct);
- BackRightBase.startRotateFor(directionType::fwd, 2.47, rotationUnits::rev, 70, velocityUnits::pct);
- BackLeftBase.rotateFor(directionType::fwd, 2.47, rotationUnits::rev, 70,velocityUnits::pct);
+ FrontRightBase.startRotateFor(directionType::fwd, 2.47, rotationUnits::rev, 65,  velocityUnits::pct);
+ FrontLeftBase.startRotateFor(directionType::fwd, 2.47, rotationUnits::rev, 65,velocityUnits::pct);
+ BackRightBase.startRotateFor(directionType::fwd, 2.47, rotationUnits::rev, 65, velocityUnits::pct);
+ BackLeftBase.rotateFor(directionType::fwd, 2.47, rotationUnits::rev, 65,velocityUnits::pct);
  vex::task::sleep(600);
  Claw.spin(directionType::fwd,100, velocityUnits::pct);
  vex::task::sleep(300);
