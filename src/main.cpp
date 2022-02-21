@@ -80,7 +80,7 @@ void pre_auton(void) {
 
 void autonomous(void) {
   //skills
-
+/*
 Conveyor.spin(forward, 100, velocityUnits::pct); //grab goal  
  vex::task::sleep(270);
  Conveyor.stop(hold);
@@ -285,7 +285,7 @@ FrontRightBase.startRotateFor(directionType::rev, .55, rotationUnits::rev, 35,  
  BackRightBase.startRotateFor(directionType::rev, 1, rotationUnits::rev, 35, velocityUnits::pct);
  BackLeftBase.rotateFor(directionType::rev, 1, rotationUnits::rev, 35,velocityUnits::pct);
  vex::task::sleep(200);
-
+*/
  //left side 
 /*
  Conveyor.spin(forward, 20, velocityUnits::pct);
@@ -310,10 +310,10 @@ FrontRightBase.startRotateFor(directionType::rev, .55, rotationUnits::rev, 35,  
  vex::task::sleep(200);
  Claw.stop();
  vex::task::sleep(600);
- FrontRightBase.startRotateFor(directionType::fwd, 2.47, rotationUnits::rev, 65,  velocityUnits::pct);
- FrontLeftBase.startRotateFor(directionType::fwd, 2.47, rotationUnits::rev, 65,velocityUnits::pct);
- BackRightBase.startRotateFor(directionType::fwd, 2.47, rotationUnits::rev, 65, velocityUnits::pct);
- BackLeftBase.rotateFor(directionType::fwd, 2.47, rotationUnits::rev, 65,velocityUnits::pct);
+ FrontRightBase.startRotateFor(directionType::fwd, 2.49, rotationUnits::rev, 65,  velocityUnits::pct);
+ FrontLeftBase.startRotateFor(directionType::fwd, 2.49, rotationUnits::rev, 65,velocityUnits::pct);
+ BackRightBase.startRotateFor(directionType::fwd, 2.49, rotationUnits::rev, 65, velocityUnits::pct);
+ BackLeftBase.rotateFor(directionType::fwd, 2.49, rotationUnits::rev, 65,velocityUnits::pct);
  vex::task::sleep(600);
  Claw.spin(directionType::fwd,100, velocityUnits::pct);
  vex::task::sleep(300);
@@ -326,20 +326,29 @@ FrontRightBase.startRotateFor(directionType::rev, .55, rotationUnits::rev, 35,  
  */
 
  //rightauton
- /*
- FrontRightBase.startRotateFor(directionType::rev, 1.5, rotationUnits::rev, 55,  velocityUnits::pct);
- FrontLeftBase.startRotateFor(directionType::rev, 1.5, rotationUnits::rev, 55,velocityUnits::pct);
- BackRightBase.startRotateFor(directionType::rev, 1.5, rotationUnits::rev, 55, velocityUnits::pct);
- BackLeftBase.rotateFor(directionType::rev, 1.5, rotationUnits::rev, 55,velocityUnits::pct);
+ 
+ FrontRightBase.startRotateFor(directionType::rev, 1.1, rotationUnits::rev, 30,  velocityUnits::pct);
+ FrontLeftBase.startRotateFor(directionType::rev, 1.1, rotationUnits::rev, 30,velocityUnits::pct);
+ BackRightBase.startRotateFor(directionType::rev, 1.1, rotationUnits::rev, 30, velocityUnits::pct);
+ BackLeftBase.rotateFor(directionType::rev, 1.1, rotationUnits::rev, 30,velocityUnits::pct);
  vex::task::sleep(600);
- Conveyor.spin(forward,60, velocityUnits::pct);
- vex::task::sleep(300);
+ Conveyor.spin(forward, 20, velocityUnits::pct);
+ vex::task::sleep(270);
  Conveyor.stop(hold);
  vex::task::sleep(500);
- FrontRightBase.startRotateFor(directionType::rev, 1, rotationUnits::rev, 50,  velocityUnits::pct);
- FrontLeftBase.startRotateFor(directionType::fwd, 1, rotationUnits::rev, 50,velocityUnits::pct);
- BackRightBase.startRotateFor(directionType::rev, 1, rotationUnits::rev, 50, velocityUnits::pct);
- BackLeftBase.rotateFor(directionType::fwd, 1, rotationUnits::rev, 50,velocityUnits::pct);
+ Conveyor.spin(forward, 100, velocityUnits::pct); //grab goal  
+ vex::task::sleep(270);
+ Conveyor.stop(hold);
+ vex::task::sleep(500);
+  FrontRightBase.startRotateFor(directionType::rev, .4, rotationUnits::rev, 30,  velocityUnits::pct);
+ FrontLeftBase.startRotateFor(directionType::rev, .4, rotationUnits::rev, 30,velocityUnits::pct);
+ BackRightBase.startRotateFor(directionType::rev, .4, rotationUnits::rev, 30, velocityUnits::pct);
+ BackLeftBase.rotateFor(directionType::rev, .4, rotationUnits::rev, 30,velocityUnits::pct);
+ vex::task::sleep(500);
+ FrontRightBase.startRotateFor(directionType::rev, 1.05, rotationUnits::rev, 40,  velocityUnits::pct);
+ FrontLeftBase.startRotateFor(directionType::fwd, 1.05, rotationUnits::rev, 40,velocityUnits::pct);
+ BackRightBase.startRotateFor(directionType::rev, 1.05, rotationUnits::rev, 40, velocityUnits::pct);
+ BackLeftBase.rotateFor(directionType::fwd, 1.05, rotationUnits::rev, 40,velocityUnits::pct);
  vex::task::sleep(500);
  Claw.spin(directionType::rev,100, velocityUnits::pct);
  vex::task::sleep(300);
@@ -352,15 +361,17 @@ FrontRightBase.startRotateFor(directionType::rev, .55, rotationUnits::rev, 35,  
 vex::task::sleep(500);
  Claw.spin(forward,100, velocityUnits::pct);
  vex::task::sleep(300);
- Claw.stop();
+ Claw.stop(hold);
  vex::task::sleep(500);
- FrontRightBase.spin(directionType::rev,100, velocityUnits::pct);
- FrontLeftBase.spin(directionType::rev,100, velocityUnits::pct);
- BackRightBase.spin(directionType::rev,100, velocityUnits::pct);
- BackLeftBase.spin(directionType::rev,100, velocityUnits::pct);
+ FrontRightBase.spin(directionType::rev,70, velocityUnits::pct);
+ FrontLeftBase.spin(directionType::rev,70, velocityUnits::pct);
+ BackRightBase.spin(directionType::rev,70, velocityUnits::pct);
+ BackLeftBase.spin(directionType::rev,70, velocityUnits::pct);
+ vex::task::sleep(500);
+ Conveyor.spin(reverse,30, velocityUnits::pct);
  vex::task::sleep(300);
-
- */
+ Conveyor.stop(hold);
+ 
 }
 
 /*---------------------------------------------------------------------------*/
